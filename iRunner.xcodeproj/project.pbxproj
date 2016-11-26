@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3275A66B1DE9A8A7009FFD28 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3275A6691DE9A8A7009FFD28 /* Player.cpp */; };
 		32F94C251DE8B718004FE136 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32F94C241DE8B718004FE136 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3275A6691DE9A8A7009FFD28 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		3275A66A1DE9A8A7009FFD28 /* Player.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
 		32F94C211DE8B718004FE136 /* iRunner */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = iRunner; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F94C241DE8B718004FE136 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				32F94C241DE8B718004FE136 /* main.cpp */,
+				3275A6691DE9A8A7009FFD28 /* Player.cpp */,
+				3275A66A1DE9A8A7009FFD28 /* Player.hpp */,
 			);
 			path = iRunner;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3275A66B1DE9A8A7009FFD28 /* Player.cpp in Sources */,
 				32F94C251DE8B718004FE136 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +222,7 @@
 		32F94C291DE8B718004FE136 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_LDFLAGS = "-lncurses";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +230,7 @@
 		32F94C2A1DE8B718004FE136 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_LDFLAGS = "-lncurses";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -246,6 +254,7 @@
 				32F94C2A1DE8B718004FE136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
